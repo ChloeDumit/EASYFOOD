@@ -1,0 +1,15 @@
+.nav_bar {
+  max-width: 50vw;
+  width: 1000px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-left:20%;
+  margin-top: -70px;
+  font-size: 20px;
+  color: black;
+  
+}
+
+.navbar-collapse {
+  background-color: #efefef;
+}

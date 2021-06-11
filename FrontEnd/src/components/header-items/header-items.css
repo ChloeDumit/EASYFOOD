@@ -1,0 +1,83 @@
+.logo {
+  max-width: 105px;
+  margin-left: 15px;
+  margin-top: 3px;
+  margin-bottom: auto;
+  margin-right: auto;
+}
+.button_header_items,
+.button_header_profile {
+  color: #87a1b0;
+  border: none;
+  margin-top: 20px;
+  background-color: transparent;
+}
+.button_header_items {
+  margin-left: 75%;
+}
+
+.cart {
+  margin-right: -380px;
+}
+
+.profile {
+  margin-right: -500px;
+}
+.cart,
+.profile {
+  width: 30px;
+  height: 30px;
+
+}
+
+.NavBar0 {
+  height: 150px;
+  background-color: #efefef;
+  width: 100vw;
+  
+  box-shadow: 0 0 5px grey, 0 0 5px grey, 0 0 5px grey, 0 0 5px grey;
+
+}
+
+.NavBar {
+  margin-top: -50px;
+  width: 80vw;
+}
+
+.header-style {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 600px) {
+
+  .NavBar0 {
+    margin-top: 0px;
+  }
+  .button_header_items
+   {
+    margin-left: -85px;
+
+  }
+  
+  .NavBar {
+    margin-top: -60px;
+    margin-left: -5px;
+    position: relative;
+   }
+}
+
+@media screen and (min-width: 601px) {
+  
+  .NavBar0 {
+    margin-top: 0px;
+  }
+  .button_header_items {
+    margin-left: 40vw;
+
+  }
+  .NavBar {
+    margin-left: -50px;
+   }
+}
+

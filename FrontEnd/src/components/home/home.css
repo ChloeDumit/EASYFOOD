@@ -1,0 +1,114 @@
+.container-info {
+  margin-top: 50px;
+  background-image: url("../../images/background_home.jpg");
+  background-repeat: no-repeat;
+}
+.principal {
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  margin-left: 30px;
+}
+
+.principal2 {
+  font-size: 100px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  margin-bottom: auto;
+  margin-left: 30px;
+}
+
+.subtitle {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  margin-top: 30px;
+  margin-bottom: auto;
+  margin-left: 30px;
+}
+.button {
+  background-color: #87a1b0;
+  border-radius: 50px;
+  width: 200px;
+  height: 40px;
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  color: white;
+  margin-left: 30px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.buttonLink {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+.buttonLink:hover {
+  transform: scale(0.8, 0.8) !important;
+  color: #f0f0f0;
+}
+.button:hover {
+  transform: scale(0.8, 0.8) !important;
+}
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .principal {
+    font-size: 7vw;
+  }
+  .principal2 {
+    font-size: 7vw;
+  }
+  .subtitle {
+    font-size: 3vw;
+  }
+  .button {
+    width: 30vw;
+    font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .principal{
+    font-size: 18vw;
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+  }
+  
+  .principal2 {
+    font-size: 18vw;
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+  }
+  .subtitle {
+    font-size: 8vw;
+    background-color:#87a1b0;
+    color: black;
+    padding: 10px;
+    margin-left: 0px;
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+  }
+  .button {
+    width: 150px;
+    font-size: 15px;
+    
+  }
+  /* .container-info {
+    background-image: url("../../images/background_home.jpg");
+    background-repeat: no-repeat;
+    background-position-x: -900px ;
+    background-size: cover;
+    
+  } */
+}
+
+@media screen and (min-width: 900px) {
+  .container-info {
+  background-image: url("../../images/background_home.jpg");
+    background-repeat: no-repeat;
+    background-position-x: 200px ;
+    background-size: cover;
+}
+.button {
+  width: 20vw;
+  font-size: 25px;
+  
+}
+}

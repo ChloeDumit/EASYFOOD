@@ -1,0 +1,68 @@
+.itemCard {
+  border-radius: 20px;
+  border-width: 10px;
+  border-color: #87a1b0;
+  border-style: solid;
+  text-align: center;
+  width: 350px;
+  height: 600px;
+  background-color: white;
+  margin-top: 60px;
+  padding: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+.img-item {
+  width: 80%;
+  border: solid 4px #87a1b0;
+}
+
+.item-precio {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.agregar {
+  text-align: center;
+  margin-left: 10px;
+  background-color: #87a1b0;
+  border-radius: 30px;
+  border-width: 2px;
+  width: 70%;
+  height: 30px;
+  margin-top: 10px;
+  border: none;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+.agregar:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.item-info {
+  font-family: "Montserrat", sans-serif;
+}
+.ver {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+
+  .itemCard {
+    width: 90%
+  }
+  .agregar {
+    font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  
+  .itemCard {
+    width: 90%
+  }
+  .agregar {
+    font-size: 1.2vw;
+  }
+}

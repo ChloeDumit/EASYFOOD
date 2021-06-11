@@ -1,0 +1,56 @@
+.footer {
+  background-color: #efefef;
+  margin: 0px;
+  box-shadow: 0 -6px 6px grey
+}
+.telefono,
+.mail,
+.facebook,
+.instagram {
+  margin-top: 20px;
+  background-color: #efefef;
+  color: #87a1b0;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+.instagram {
+  margin-left: 150px;
+}
+.facebook {
+  margin-left: 150px;
+}
+.telefono {
+  margin-left: 150px;
+}
+.mail {
+  margin-left: 150px;
+}
+.instagram:hover,
+.facebook:hover,
+.mail:hover,
+.telefono:hover {
+  transform: scale(1.2, 1.2);
+}
+.contact {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 45%;
+}
+
+
+@media screen and (max-width: 600px) {
+  .instagram {
+    margin-left: 50px;
+  }
+  .facebook {
+    margin-left: 50px;
+  }
+  .telefono {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+  .mail {
+    margin-left: 50px;
+    margin-top: 10px;
+  }
+}

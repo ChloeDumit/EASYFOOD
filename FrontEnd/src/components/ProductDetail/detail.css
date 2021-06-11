@@ -1,0 +1,11 @@
+.ItemDetail_img {
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: #87a1b0;
+    border-style: solid;
+    max-height: 500px;
+    max-width: 500px;
+}
+.ItemDetail_contDetalles {
+    margin-top: -300px;
+}

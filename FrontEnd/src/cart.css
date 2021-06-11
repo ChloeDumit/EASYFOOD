@@ -1,0 +1,7 @@
+.snipcart-item-line__container:hover {
+  transform: scale(0.9);
+}
+.snipcart-cart__secondary-header {
+  max-height: 150px;
+  background-color: #efefef;
+}
