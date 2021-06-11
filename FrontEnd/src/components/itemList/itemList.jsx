@@ -8,7 +8,7 @@ import { Link} from 'react-router-dom'
 function ItemList({ name, price, id, info, categ, photo }) {
   return (
     
-    <Col className="mx-auto" xs="12" sm="12" md="4" lg="4" xl="4">
+    <Col className="mx-auto" xs="12" sm="12" md="6" lg="4" xl="4">
       <div className="itemCard">
         <figure>
           <img
@@ -20,7 +20,8 @@ function ItemList({ name, price, id, info, categ, photo }) {
         <div className="infoBox">
           
           <h1> 
-            <Link to={`/item/${id}`} className="ver">{name}</Link></h1>
+            <Link to={`/item/${id}`} className="ver">{name}</Link>
+          </h1>
 
           <p className="item-info">{info}</p>
           <button

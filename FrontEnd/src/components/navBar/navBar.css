@@ -1,4 +1,4 @@
-.nav_bar {
+/* .nav_bar {
   max-width: 50vw;
   width: 1000px;
   display: flex;
@@ -12,4 +12,22 @@
 
 .navbar-collapse {
   background-color: #efefef;
+} */
+
+.logo {
+  max-width: 105px;
+  margin-left: 15px;
+  margin-top: 3px;
+  margin-bottom: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.hamburguer {
+  position: absolute;
+  left: 80vw;
+}
+
+.hola {
+  left: 80px
 }

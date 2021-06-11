@@ -13,20 +13,25 @@ function Header() {
 
     <header className="header-style">
       <div className="NavBar0">
-        <a class="navbar-brand" href="/">
-          <img src={logo} alt="logo" className="logo" />
-        </a>
-        <button className="button_header_items snipcart-checkout">
+        <div className="NavBar">
+        <NavBar className="nav_bar_header" />
+      </div>
+
+      <div className="buttonContainer">
+
+
+        <button className="button_header_items snipcart-checkout ">
+        <span class="snipcart-items-count"></span>
           <BsFillBagFill className="cart" />
 
         </button>
         <button className="button_header_profile snipcart-customer-signin">
           <CgProfile className="profile" />
         </button>
+
+        </div>
       </div>
-      <div className="NavBar">
-        <NavBar className="nav_bar_header" />
-      </div>
+     
     </header>
   );
 }
