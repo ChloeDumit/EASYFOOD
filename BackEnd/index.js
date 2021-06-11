@@ -12,6 +12,6 @@ app.use(express.json())
 app.use(cors())
 app.use(bodyParser.json())
 
-app.use('/api', productRoutes.routes)
+app.use('/', productRoutes.routes)
 
 app.listen(config.port, () => console.log('App listening in url http://localhost:' + config.port))

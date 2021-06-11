@@ -29,7 +29,7 @@ const getAllProducts = async (req, res, next) => {
                     doc.id,
                     doc.data().name,
                     doc.data().price,
-                    doc.data().shortinfo,
+                    doc.data().info,
                     doc.data().longinfo,
                     doc.data().category,
                     doc.data().photo,
@@ -83,10 +83,37 @@ const deleteProduct = async (req, res, next) => {
 }
 
 
+const getCategProds = async (req, res, next) =>{
+    console.log(req.params.category)
+    try {
+        const id = req.params.category
+        const data = await firestore.collection('products').where('category', '==', id).get()
+        const ProductsArray = []
+        data.forEach(doc => {
+            const product = new Product (
+                doc.id,
+                doc.data().name,
+                doc.data().price,
+                doc.data().info,
+                doc.data().longinfo,
+                doc.data().category,
+                doc.data().photo,
+
+            );
+            ProductsArray.push(product)
+        })
+        res.send(ProductsArray)
+    } catch (error) {
+        res.status(400).send(error.message)
+    }
+    }
+
+
 module.exports = {
     addProduct,
     getAllProducts,
     getProduct,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    getCategProds
 }
