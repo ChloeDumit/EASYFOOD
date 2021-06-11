@@ -8,7 +8,7 @@ function NavBar() {
     <div className='navbar'>
     <Navbar collapseOnSelect='false' expand="lg" className="nav_bar">
     <Navbar.Brand href="/home">
-      <img className="logo" src={logo} />
+      <img className="logo" alt='logo' src={logo} />
     </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className='hamburguer'/>
       <Navbar.Collapse id="basic-navbar-nav">
