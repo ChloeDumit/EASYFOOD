@@ -8,8 +8,7 @@ import AllItems from "./components/AllItems/allItems";
 import Footer from "./components/footer/footer";
 import ProductDetailContainer from "./components/ProductDetail/productDetailContainer";
 import HowContainer from "./components/how/howContainer";
-import Products from "./components/products/products";
-
+import AboutContainer from "./components/how/about";
 function App() {
   return (
     <BrowserRouter>
@@ -37,8 +36,9 @@ function App() {
           <HeaderItems />
           <HowContainer />
         </Route>
-        <Route exact path="/products">
-          <Products />
+        <Route exact path="/about">
+          <HeaderItems />
+          <AboutContainer />
         </Route>
       </Switch>
       <Footer />

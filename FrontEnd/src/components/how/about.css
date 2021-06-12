@@ -1,0 +1,63 @@
+.food {
+    max-width: 100%;
+    width: 100%;
+
+}
+
+.aboutContainer {
+    width: 70vw;
+    font-size: 20px;
+    margin: 0 auto;
+    top: 100px;
+    font-style: italic;
+}
+
+
+.img-about {
+    width: 200px;
+}
+
+.team {
+    color: #87a1b0;
+    font-size: 50px;
+    margin-left: 37%;
+    margin-top: 100px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.aboutCard {
+    margin-left: 150px;
+}
+
+.linkedin {
+    margin-right: 100px;
+    text-decoration: none;
+    color: #87a1b0;
+
+}
+
+.github {
+    text-decoration: none;
+    color: #87a1b0;
+}
+
+.name {
+    margin-left: 60px;
+}
+
+.hbtn{
+    font-size: 10px;
+}
+
+.link {
+    margin-left: 10px;
+    color: #87a1b0;
+}
+
+.about {
+    color: #87a1b0;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 30vw;
+    margin-bottom: 70px;
+    font-size: 80px;
+}

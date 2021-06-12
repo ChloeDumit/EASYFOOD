@@ -3,8 +3,8 @@
   margin-right: 0px;
   margin-left: 0px;
   height: 150px;
-
 }
+
 .logo {
   max-width: 140px;
   margin-left: 15px;
@@ -12,6 +12,7 @@
   margin-bottom: auto;
   margin-right: auto;
 }
+
 .button_header {
   background-color: #87a1b0;
   border-radius: 50px;
@@ -22,8 +23,9 @@
   font-weight: 500px;
   color: white;
   float: right;
-  margin-top: 50px;
-  margin-right: 50px;
+  top: -100px;
+  right: 15px;
+  position: relative
 }
 
 .button_header:hover {
@@ -39,17 +41,14 @@
   color: #efefef;
 }
 
+.nav_bar_color {
+  background-color: #efefef;
+}
 
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 990px) {
   .button_header {
-    width: 35vw;
-    font-size: 4vw;
+    display: none;
   }
 }
 
-@media screen and (min-width: 601px) {
-  .button_header {
-    width: 200px;
-    font-size: 20px;
-  }
-}
