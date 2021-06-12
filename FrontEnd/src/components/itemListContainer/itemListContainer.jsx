@@ -46,7 +46,7 @@ function ItemContainer() {
                 id={product.id}
                 name={product.data.name}
                 price={product.data.price}
-                info={product.data.info}
+                shortinfo={product.data.shortinfo}
                 longinfo={product.data.longinfo}
                 categ={product.data.category}
                 photo={product.data.photo}
