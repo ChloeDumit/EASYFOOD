@@ -26,7 +26,7 @@
 }
 
 .aboutCard {
-    margin-left: 150px;
+    margin-left: 10vw;
 }
 
 .linkedin {
@@ -60,4 +60,13 @@
     margin-left: 30vw;
     margin-bottom: 70px;
     font-size: 80px;
+}
+
+@media screen and (max-width: 900px) {
+    .about{
+        font-size: 40px;
+    }
+    .team {
+        font-size: 30px;
+    }
 }
