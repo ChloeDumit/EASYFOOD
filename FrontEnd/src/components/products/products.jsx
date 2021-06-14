@@ -1,53 +1,53 @@
-import React, {Component} from "react";
+import React from "react";
 import axios from "axios";
-import products from '../../products.json';
+// import products from '../../products.json';
 
-function handleSubmit(event) {
+// function handleSubmit(event) {
 
-    axios.get('https://pokeapi.co/api/v2/pokemon/' + this.state.input_id).then(r => {
+//     axios.get('https://pokeapi.co/api/v2/pokemon/' + this.state.input_id).then(r => {
 
-        var data = r.data;
-        var types = [];
-        for (let i = 0; i < data.types.length; i++) types.push(data.types[i].name);
+//         var data = r.data;
+//         var types = [];
+//         for (let i = 0; i < data.types.length; i++) types.push(data.types[i].name);
 
-        const pokemon = {
-            id: data.id,
-            name: data.name,
-            sprite: data.sprites.front_default,
-            height: data.height,
-            weight: data.weight,
-            types: types,
-        };
+//         const pokemon = {
+//             id: data.id,
+//             name: data.name,
+//             sprite: data.sprites.front_default,
+//             height: data.height,
+//             weight: data.weight,
+//             types: types,
+//         };
 
-        this.setState({
-            pokemon: pokemon
-        });
+//         this.setState({
+//             pokemon: pokemon
+//         });
 
-    }).catch(e => {
+//     }).catch(e => {
 
-        console.log(e);
+//         console.log(e);
 
-    }); // axios
+//     }); // axios
 
-    event.preventDefault();
+//     event.preventDefault();
 
- // handleSubmit
-    return (
-        <div>
-            <form onSubmit={this.handleSubmit}>
-                <label>
-                    Pokemon's id
-                    <input type="text" value={this.state.input_id} onChange={this.handleChange} />
-                </label>
-                <input type="submit" value="Find!"/>
-            </form>
-            <code>{this.state.pokemon.id}
-{this.state.pokemon.name} 
-{this.state.pokemon.sprite}
-{this.state.pokemon.height}
-{this.state.pokemon.weight}
-{this.state.pokemon.types}</code>
-        </div>
-    );
- // render
-}
+//  // handleSubmit
+//     return (
+//         <div>
+//             <form onSubmit={this.handleSubmit}>
+//                 <label>
+//                     Pokemon's id
+//                     <input type="text" value={this.state.input_id} onChange={this.handleChange} />
+//                 </label>
+//                 <input type="submit" value="Find!"/>
+//             </form>
+//             <code>{this.state.pokemon.id}
+// {this.state.pokemon.name} 
+// {this.state.pokemon.sprite}
+// {this.state.pokemon.height}
+// {this.state.pokemon.weight}
+// {this.state.pokemon.types}</code>
+//         </div>
+//     );
+//  // render
+// }

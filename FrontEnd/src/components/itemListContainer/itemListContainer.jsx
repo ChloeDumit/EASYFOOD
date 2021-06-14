@@ -1,8 +1,8 @@
-import React from "react";
-import ItemList from "../itemList/itemList";
-import { useState, useEffect } from "react";
-import { getFirestore } from "../../db";
-import { useParams } from "react-router-dom";
+// import React from "react";
+// import ItemList from "../itemList/itemList";
+// import { useState, useEffect } from "react";
+// import { getFirestore } from "../../db";
+// import { useParams } from "react-router-dom";
 import "./itemListContainer.css";
 import { Row, Container } from "react-bootstrap";
 import products from '../../products.json';
@@ -52,7 +52,7 @@ function ItemContainer() {
   data-item-id={product.id}
   data-item-image={product.image}
   data-item-name={product.title}
-  data-item-url="localhost:3000/"
+  data-item-url="/"
   data-item-price={product.price}
 >
   Add to Cart

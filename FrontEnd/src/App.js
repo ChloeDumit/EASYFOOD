@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Header from "./components/header/header";
 import HeaderItems from "./components/header-items/header-items";
 import Home from "./components/home/home";
@@ -9,7 +9,7 @@ import Footer from "./components/footer/footer";
 import ProductDetailContainer from "./components/ProductDetail/productDetailContainer";
 import HowContainer from "./components/how/howContainer";
 import AboutContainer from "./components/how/about";
-import handleSubmit from "./components/products/products";
+// import handleSubmit from "./components/products/products";
 function App() {
   return (
     <BrowserRouter>
