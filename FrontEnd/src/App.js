@@ -9,16 +9,18 @@ import Footer from "./components/footer/footer";
 import ProductDetailContainer from "./components/ProductDetail/productDetailContainer";
 import HowContainer from "./components/how/howContainer";
 import AboutContainer from "./components/how/about";
+import handleSubmit from "./components/products/products";
 function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
+        {/* <Route exact path="/">
           <Redirect to="/home" />
-        </Route>
-        <Route exact path="/home">
+        </Route> */}
+        <Route exact path="/">
           <Header />
           <Home />
+          <ItemListContainer />
         </Route>
         <Route exact path="/categories/:categ">
           <HeaderItems />
@@ -39,6 +41,10 @@ function App() {
         <Route exact path="/about">
           <HeaderItems />
           <AboutContainer />
+        </Route>
+        <Route exact path="/products">
+          <HeaderItems />
+          <handleSubmit />
         </Route>
       </Switch>
       <Footer />
