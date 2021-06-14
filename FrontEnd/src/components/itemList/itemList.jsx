@@ -5,7 +5,7 @@ import { Link} from 'react-router-dom'
 
 
 
-function ItemList({ name, price, id, shortinfo, categ, photo }) {
+function ItemList({ name, price, id, info, categ, photo }) {
   return (
     
     <Col className="mx-auto" xs="12" sm="12" md="6" lg="4" xl="4">
@@ -23,7 +23,7 @@ function ItemList({ name, price, id, shortinfo, categ, photo }) {
             <Link to={`/item/${id}`} className="ver">{name}</Link>
           </h1>
 
-          <p className="item-info">{shortinfo}</p>
+          <p className="item-info">{info}</p>
           <button
             className="agregar snipcart-add-item"
             data-item-id={id}
@@ -31,7 +31,7 @@ function ItemList({ name, price, id, shortinfo, categ, photo }) {
             data-item-url={`/categories/${categ}`}
             data-item-name={name}
             data-item-image={`/assets/${photo}.jpg`}
-            data-item-description={shortinfo}
+            data-item-description={info}
             data-item-custom1-name="Servings"
             data-item-custom1-options="1|2[+100.00]|3[+200.00]|4[+300.00]">
           
