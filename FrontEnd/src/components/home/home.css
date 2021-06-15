@@ -1,7 +1,15 @@
 .container-info {
-  margin-top: 50px;
-  background-image: url("../../images/background_home.jpg");
+  margin-top: 0px;
   background-repeat: no-repeat;
+}
+.rectangle {
+  margin-left: 80vw;
+  margin-top: -700px;
+}
+.food1 {
+ width: 500px;
+ margin-top: -800px;
+ margin-left: 700px;
 }
 .principal {
   font-size: 100px;
@@ -51,35 +59,68 @@
   transform: scale(0.8, 0.8) !important;
 }
 
-/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 601px) {
-  .principal {
-    font-size: 7vw;
-  }
-  .principal2 {
-    font-size: 7vw;
-  }
-  .subtitle {
-    font-size: 3vw;
-  }
-  .button {
-    width: 30vw;
-    font-size: 2vw;
-  }
+.delivery {
+  background-color: #87a1b0;
+  height:25vw;
+  margin-top: 100px;
+}
+.delivery-img {
+  margin-left: 6vw;
+  width: 80vw;
+  margin-top: -125px;
+
+}
+.How-work {
+  margin-left: 30vw;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  margin-top: 100px;
+}
+.info-how {
+  
+  width: 700px;
+  font-size: 20px;
+  margin-left: 20vw;
+  text-align: center;
+  margin-top: 30px;
+}
+.box {
+  margin-left: 10vw;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 900px) {
+  .container-info {
+    overflow-x: hidden;
+  }
+  .rectangle {
+    display: none;
+  }
+  .food1 {
+    display: none;
+  }
+  .delivery-img {
+    margin-left:0;
+    width: 100vw;
+    margin-top: -15vw;
+  
+  }
+  .delivery {
+    background-color: #87a1b0;
+    height:25vw;
+    margin-top: 0px;
+  }
   .principal{
-    font-size: 18vw;
+    font-size: 25px;
     text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
   }
   
   .principal2 {
-    font-size: 18vw;
+    font-size: 25px;
     text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
   }
   .subtitle {
-    font-size: 8vw;
+    font-size: 15px;
     background-color:#87a1b0;
     color: black;
     padding: 10px;
@@ -91,22 +132,96 @@
     font-size: 15px;
     
   }
-  /* .container-info {
-    background-image: url("../../images/background_home.jpg");
-    background-repeat: no-repeat;
-    background-position-x: -900px ;
-    background-size: cover;
+  .How-work {
+    margin-left: 20vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: 60px;
+    margin-top: 100px;
+  }
+  .info-how {
     
-  } */
+    width: 500px;
+    font-size: 18px;
+    margin-left: 15vw;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .box {
+    width: 700px;
+    margin-left:25px;
+  }
+
+
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 650px) {
   .container-info {
-  background-image: url("../../images/background_home.jpg");
-    background-repeat: no-repeat;
-    background-position-x: 200px ;
-    background-size: cover;
+    overflow-x: hidden;
+  }
+  .rectangle {
+    display: none;
+  }
+  .food1 {
+    display: none;
+  }
+  .delivery-img {
+    margin-left:0;
+    width: 380px;
+    margin-top: -15vw;
+  
+  }
+  .delivery {
+    background-color: #87a1b0;
+    height:25vw;
+    margin-top: 0px;
+  }
+  .principal{
+    font-size: 25px;
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+  }
+  
+  .principal2 {
+    font-size: 25px;
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+  }
+  .subtitle {
+    font-size: 15px;
+    background-color:#87a1b0;
+    color: black;
+    padding: 10px;
+    margin-left: 0px;
+    text-shadow: 0 0 5px white, 0 0 5px white, 0 0 5px white, 0 0 5px white;
+  }
+  .button {
+    width: 150px;
+    font-size: 15px;
+    
+  }
+  .How-work {
+    margin-left: 10vw;
+    font-family: "Montserrat", sans-serif;
+    font-size: 40px;
+    margin-top: 100px;
+  }
+  .info-how {
+    
+    width: 250px;
+    font-size: 15px;
+    margin-left: 15vw;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .box {
+    width: 350px;
+    margin-left:10px;
+  }
+
+
 }
+
+
+@media screen and (min-width: 900px) {
+
 .button {
   width: 20vw;
   font-size: 25px;

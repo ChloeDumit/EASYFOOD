@@ -1,13 +1,22 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Row, Container, Col } from "react-bootstrap";
 import "./about.css";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
-function aboutContainer() {
+
+function AboutContainer() {
+
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+  
   return (
+
     <div>
-      {/* <img className="food" src="/assets/banner.png" alt="loading..."></img> */}
-      <h1 className='about'>About Us</h1>
-      <div className="aboutContainer">
+      <h1 data-aos='slide-right' className='about'>About Us</h1>
+      <div data-aos='fade-up' className="aboutContainer">
         <p className="p_cont">
           We are a young couple who always struggle with what were we going to
           eat, we dont like to go the supermarket, and we dont have a lot of
@@ -31,7 +40,7 @@ function aboutContainer() {
         <a className='link' href='https://github.com/ChloeDumit/EASYFOOD'>Project Repository</a></p>
         
       </div>
-      <div>
+      <div data-aos='fade-up'>
         <h1 className='team'>Our Team</h1>
         <Container className="personcontainer" id="aboutPersonContainer">
         <Row className="Row">
@@ -71,4 +80,4 @@ function aboutContainer() {
   );
 }
 
-export default aboutContainer;
+export default AboutContainer;
