@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8080",
+  "homepage": "https://ChloeDumit.github.io/EASYFOOD",
   "dependencies": {
     "@testing-library/jest-dom": "^5.12.0",
     "@testing-library/react": "^11.2.7",
@@ -16,6 +17,7 @@
     "express": "^4.17.1",
     "firebase": "^8.6.5",
     "firebase-admin": "^9.9.0",
+    "gh-pages": "^3.2.1",
     "lodash": "^4.17.21",
     "mdb-ui-kit": "^3.6.0",
     "mdbreact": "^5.0.2",
@@ -45,6 +47,8 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

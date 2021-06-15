@@ -34,7 +34,6 @@ function ItemList({ name, price, id, shortinfo, categ, photo }) {
             data-item-description={shortinfo}
             data-item-custom1-name="Servings"
             data-item-custom1-options="1|2[+100.00]|3[+200.00]|4[+300.00]">
-          
             Add to cart (${price})
           </button>
         </div>
