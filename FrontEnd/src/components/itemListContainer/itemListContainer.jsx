@@ -42,7 +42,7 @@ function ItemContainer() {
           </Row>
         </>
       ) : (
-        <img className='spin' src='/assets/Spin.svg' alt='Cargando productos...' />
+        <p>Loading... </p>
       )}
     </Container>
   );

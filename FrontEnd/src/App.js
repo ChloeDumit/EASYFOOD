@@ -9,6 +9,8 @@ import Footer from "./components/footer/footer";
 import ProductDetailContainer from "./components/ProductDetail/productDetailContainer";
 import HowContainer from "./components/how/howContainer";
 import AboutContainer from "./components/how/about";
+
+
 function App() {
   return (
     <BrowserRouter>
