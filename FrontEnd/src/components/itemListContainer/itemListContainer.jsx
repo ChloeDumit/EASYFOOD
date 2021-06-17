@@ -11,7 +11,6 @@ function ItemContainer() {
   const [product, getProducts] = useState([]);
   let { categ }= useParams();
   let route = `https://enigmatic-escarpment-12658.herokuapp.com/products/${categ}`
-  console.log(route)
   const getallProducts = () => {
     axios
       .get(route)
