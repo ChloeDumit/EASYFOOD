@@ -7,7 +7,32 @@
     max-width: 500px;
 }
 .ItemDetail_contDetalles {
-    margin-top: -300px;
+    margin-left: 400px;
 }
 
+.ItemDetail_Descrip {
+    width: 700px;
+}
+.ItemDetail_textos {
+    margin-top: -300px;
+}
+.back {
+    width: 700px;
+    background-color: #87a1b0;
+  border-radius: 30px;
+  border-width: 2px;
+}
 
+@media screen and (max-width: 980px) {
+    .ItemDetail_textos{
+        margin-top: 0px;
+        margin-left: -100vw;
+    }
+    .ItemDetail_Descrip {
+        width: 70vw;
+    }
+    .back {
+        width: 70vw;
+    }
+  }
+  

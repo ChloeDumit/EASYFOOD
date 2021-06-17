@@ -4,15 +4,13 @@ import { useState, useEffect } from "react";
 import "../itemListContainer/itemListContainer.css"
 import { Row, Container } from "react-bootstrap";
 import axios from "axios";
-import { useParams } from "react-router";
 
 function ItemContainer() {
   const [product, getProducts] = useState([]);
-  let { id }= useParams();
-  let route = `https://enigmatic-escarpment-12658.herokuapp.com/product/${id}`
+
   const getallProducts = () => {
     axios
-      .get(route)
+      .get("https://enigmatic-escarpment-12658.herokuapp.com/allproducts")
       .then((res) => {
         const products = res.data;
         getProducts(products);

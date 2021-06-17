@@ -1,8 +1,11 @@
 import React from "react";
 import "./detail.css";
 import { useHistory } from "react-router-dom";
+
 function ProductDetail({ name, price, id, longinfo, categ, photo }) {
+
     let history = useHistory();
+
   return (
     <section className="row ItemDetail_Container">
       <figure className=" col-12 col-md-6 text-right">
@@ -12,11 +15,11 @@ function ProductDetail({ name, price, id, longinfo, categ, photo }) {
           alt={name}
         />
       </figure>
-      <div className="col-12 col-md-6 ItemDetail_contDetalles d-flex align-items-center">
+      <div className="ItemDetail_contDetalles">
         <div className="ItemDetail_textos">
           <h1 className="ItemDetail_Nombre">{name} </h1>
           <p className="ItemDetail_Descrip">{longinfo}</p>
-          <button className='agregar' onClick={() => history.goBack()}>Back</button>
+          <button className='back' onClick={() => history.goBack()}>Back</button>
         </div>
       </div>
     </section>
