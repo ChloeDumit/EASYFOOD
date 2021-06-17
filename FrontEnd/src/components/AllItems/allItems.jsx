@@ -10,7 +10,7 @@ function ItemContainer() {
 
   const getallProducts = () => {
     axios
-      .get("/allproducts")
+      .get("https://enigmatic-escarpment-12658.herokuapp.com/allproducts")
       .then((res) => {
         const products = res.data;
         getProducts(products);
