@@ -4,13 +4,17 @@ import { useState, useEffect } from "react";
 import "./itemListContainer.css";
 import { Row, Container } from "react-bootstrap";
 import axios from "axios";
+import { useParams } from "react-router";
+
 
 function ItemContainer() {
   const [product, getProducts] = useState([]);
-
+  let { categ }= useParams();
+  let route = `/products/${categ}`
+  console.log(route)
   const getallProducts = () => {
     axios
-      .get("/allproducts")
+      .get(route)
       .then((res) => {
         const products = res.data;
         getProducts(products);

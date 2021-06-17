@@ -9,7 +9,7 @@ router.get('/allproducts', getAllProducts)
 router.get('/product/:id', getProduct)
 router.put('/product/:id', updateProduct)
 router.delete('/product/:id', deleteProduct)
-router.get('/categories/:category', getCategProds)
+router.get('/products/:category', getCategProds)
 module.exports = {
     routes: router
 }

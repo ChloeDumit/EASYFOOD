@@ -1,36 +1,27 @@
 import React from "react";
 import ItemList from "../itemList/itemList";
 import { useState, useEffect } from "react";
-import { getFirestore } from "../../db";
-import { useParams } from "react-router-dom";
-import "../itemListContainer/itemListContainer.css";
+import "../itemListContainer/itemListContainer.css"
 import { Row, Container } from "react-bootstrap";
+import axios from "axios";
 
-function AllItems() {
-  const [product, setProducts] = useState([]);
-  const { categ } = useParams();
-  const db = getFirestore();
+function ItemContainer() {
+  const [product, getProducts] = useState([]);
 
-  const productCall = () => {
-    db.collection("products")
-      .get()
-      .then((docs) => {
-        let arrayProds = [];
-        docs.forEach((doc) => {
-          arrayProds.push({ id: doc.id, data: doc.data() });
-        });
-        console.log(arrayProds);
-        setProducts(arrayProds);
+  const getallProducts = () => {
+    axios
+      .get("/allproducts")
+      .then((res) => {
+        const products = res.data;
+        getProducts(products);
       })
-      .catch((e) => console.log(e));
+      .catch((error) => console.log(error));
   };
 
-  useEffect(
-    () => productCall(),
+  useEffect(() => {
+    getallProducts();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [categ]
-  );
-
+  }, []);
   return (
     <Container className="container" id="ItemDetailContainer">
       {product.length ? (
@@ -40,19 +31,21 @@ function AllItems() {
               <ItemList
                 key={product.id}
                 id={product.id}
-                photo={product.data.photo}
-                name={product.data.name}
-                price={product.data.price}
-                info={product.data.info}
+                name={product.name}
+                price={product.price}
+                shortinfo={product.shortinfo}
+                longinfo={product.longinfo}
+                categ={product.category}
+                photo={product.photo}
               />
             ))}
           </Row>
         </>
       ) : (
-        <p className="mensaje">Cargando productos...</p>
+        <p>Loading... </p>
       )}
     </Container>
   );
 }
 
-export default AllItems;
+export default ItemContainer;

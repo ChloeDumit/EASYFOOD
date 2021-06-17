@@ -86,8 +86,8 @@ const deleteProduct = async (req, res, next) => {
 const getCategProds = async (req, res, next) =>{
     console.log(req.params.category)
     try {
-        const id = req.params.category
-        const data = await firestore.collection('products').where('category', '==', id).get()
+        const categ = req.params.category
+        const data = await firestore.collection('products').where('category', '==', categ).get()
         const ProductsArray = []
         data.forEach(doc => {
             const product = new Product (
